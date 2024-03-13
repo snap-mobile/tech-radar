@@ -4,63 +4,70 @@
     "quadrant": "techniques",
     "ring": "adopt",
     "isNew": "FALSE",
-    "description": "placeholder"
+    "description": "GitOps is a technique for deploying applications via the <a href='https://kubernetes.io/docs/concepts/architecture/controller/'>control loop</a> pattern. An operator keeps the deployed application synchronized with configuration, usually a Git repository. <a href='https://github.com/open-gitops/documents/blob/main/PRINCIPLES.md'>GitOps</a> can be seen as a way of implementing infrastructure as code that involves continuously synchronizing and applying infrastructure code from Git into various environments. GitOps is a useful technique that takes advantage of the functionality of our Kubernetes clusters and creates opportunities to separate concerns between configuring an application and the implementation of the deployment process."
   },
   {
-    "name": "Automatic merging of Software Update PRs",
+    "name": "Automatic merging of dependency update PRs",
     "quadrant": "techniques",
     "ring": "assess",
     "isNew": "FALSE",
-    "description": "placeholder"
+    "description": "The complexity of the software supply chain is a major risk, as addressed by <a href='https://www.crowdstrike.com/cybersecurity-101/secops/software-bill-of-materials-sbom/'>SBOM</a> and <a href='https://slsa.dev/'>SLSA</a>. The Achilles heel for most teams is still the presence of vulnerabilities in dependencies, often indirect dependencies several levels down. Tools such as Dependabot help by creating pull requests (PRs) to update dependencies. It requires engineering discipline, though, to look after these PRs promptly, especially when they are for applications or services that are not under active development.<br><br> Under the right circumstances we now advocate for automatic merging of dependency update PRs. This requires that the system has extensive test coverage — not only unit tests but also functional and performance tests. The build pipeline must run all of these tests, and it must include security scanning. In short, the team must have full confidence that when the pipeline runs successfully the software is ready to go into production. In such cases, dependency update PRs, even when they include major version updates in indirect dependencies, should be merged automatically."
   },
   {
     "name": "Web Component-based Design Systems",
     "quadrant": "techniques",
     "ring": "adopt",
     "isNew": "FALSE",
-    "description": "placeholder"
+    "description": "As application development becomes increasingly dynamic and complex, we leverage design systems centered around web components and Snap UI Toolkit (SUIT) to ensure a cohesive product experience across our expanding portfolio. As our organization grows through acquisitions, SUIT's shared library is crucial for maintaining usability, accessibility, and stylistic consistency across diverse products. By adopting a product-centric mindset and fostering collaboration with our teams, we prioritize seamless integration and consistency, ensuring our design system meets the evolving needs of our team and maintains a unified user experience."
   },
   {
     "name": "JavaScript-based Design Systems",
     "quadrant": "techniques",
     "ring": "assess",
     "isNew": "FALSE",
-    "description": "placeholder"
+    "description": "With the high level of adoption of the Snap UI Toolkit (SUIT) across a majority of our products, we're transitioning towards dynamic JavaScript runtimes to address the limitations of web component-based systems, particularly their integration challenges with frontend frameworks and the issues they have with server-side rendering. This evolution of SUIT will leverage dynamic JavaScript-based components to ensure a more adaptable and seamless integration across our projects. As our team continues to grow, incorporating new acquisitions, this strategic shift guarantees that SUIT remains central to delivering a unified, accessible, and stylistically consistent user experience."
   },
   {
     "name": "CI/CD via Feature Toggles",
     "quadrant": "techniques",
     "ring": "adopt",
     "isNew": "FALSE",
-    "description": "placeholder"
+    "description": "Achieving true Continuous Deployment (CD) in our CI/CD processes, particularly for legacy applications with limited test coverage, necessitates the adoption of Feature Toggles. This approach resolves the challenge of safely implementing continuous updates by allowing us to selectively activate new features, ensuring operational stability and user satisfaction without the need for push-button deployments. A key aspect of this approach includes minimizing the use of dev and staging environments, and aligning staging deployments in lockstep with production. The critical distinction between staging and production lies in the activation state of the feature toggles—active in one environment and inactive in the other. This method ensures a seamless, controlled rollout of new features, maintaining system stability and enhancing our deployment efficiency across projects. Feature Toggles have become crucial at Snap to maintain the pace and reliability of our deployments across teams."
   },
   {
     "name": "Pre Mortem Exercises",
     "quadrant": "techniques",
     "ring": "adopt",
     "isNew": "FALSE",
-    "description": "placeholder"
+    "description": "We've adopted Pre Mortem Exercises as a proactive measure to anticipate and mitigate potential failures before they occur. This <a href='https://en.wikipedia.org/wiki/High_reliability_organization'>HRO-driven approach</a> involves systematically envisioning and analyzing potential setbacks or disasters, enabling our teams to identify and address vulnerabilities in advance. We conduct these exercises prior to any large release or deployment in order to foster a culture of vigilance and preparedness. Pre Mortem Exercises not only help in refining our strategies and operations but also reinforce our commitment to excellence and continuous improvement, essential traits of an HRO."
   },
   {
     "name": "Software Load Testing",
     "quadrant": "techniques",
     "ring": "trial",
     "isNew": "FALSE",
-    "description": "placeholder"
+    "description": "Recognizing the challenges we've faced in identifying performance bottlenecks in our past projects, the necessity of Software Load Testing has become increasingly clear. This allows us to simulate high-usage conditions to ensure our applications can handle expected traffic volumes and interactions without degradation in performance. By integrating Software Load Testing into our development lifecycle, we aim to preemptively identify and address potential issues, enhancing the robustness and scalability of our systems."
   },
   {
     "name": "Rust",
     "quadrant": "languages & frameworks",
     "ring": "assess",
     "isNew": "TRUE",
-    "description": "placeholder"
+    "description": "<a href='https://www.rust-lang.org/'><b>Rust</b></a> has emerged as a powerful programming language that we are looking to add to our arsenal, distinguished by its unparalleled emphasis on safety, speed, and concurrency. Rust's ownership model eliminates common bugs associated with memory management and concurrency, allowing for more reliable and efficient code. Its performance is comparable to languages like C, without sacrificing safety, making it an ideal choice for performance-critical applications. Furthermore, Rust's vibrant ecosystem and comprehensive tooling support foster rapid development and maintainability. We are moving Rust to 'Trial' as we think adopting Rust not only enhances our codebase's safety and performance but also aligns with our commitment to building robust, high-quality systems."
   },
   {
     "name": "Playwright",
     "quadrant": "languages & frameworks",
     "ring": "trial",
-    "isNew": "FALSE",
-    "description": "placeholder"
+    "isNew": "TRUE",
+    "description": "<a href='https://playwright.dev/'><b>Playwright</b></a> allows you to write Web UI tests for Chromium and Firefox as well as WebKit, all through the same API. The tool has gained some attention for its support of all the major browser engines which it achieves by including patched versions of Firefox and Webkit. We continue to hear positive experience reports with Playwright, in particular its stability. Teams have also found it easy to migrate from <a href='https://www.thoughtworks.com/en-us/radar/languages-and-frameworks/puppeteer'>Puppeteer</a>, which has a very similar API."
+  },
+  {
+    "name": "K6 Load Testing",
+    "quadrant": "languages & frameworks",
+    "ring": "trial",
+    "isNew": "TRUE",
+    "description": "As a load testing tool, <a href='https://k6.io/'><b>K6</b></a> distinguishes itself through its developer-centric design and its capability to simulate complex user behaviors and traffic patterns, offering more nuanced insight into system performance under various stress conditions. With its ability to send telemetry data to <a href='https://k6.io/docs/results-output/real-time/new-relic/'>New Relic</a>, K6 also facilitates real-time performance monitoring. By moving K6 into 'Trial' within our development workflow, we are not only aiming to boost our applications' efficiency but also to ensure the robustness of our systems."
   },
   {
     "name": "Next.js",
@@ -186,6 +193,20 @@
     "quadrant": "platforms",
     "ring": "assess",
     "isNew": "FALSE",
+    "description": "placeholder"
+  },
+  {
+    "name": "Argo CD",
+    "quadrant": "platforms",
+    "ring": "assess",
+    "isNew": "TRUE",
+    "description": "placeholder"
+  },
+  {
+    "name": "Kargo",
+    "quadrant": "platforms",
+    "ring": "assess",
+    "isNew": "TRUE",
     "description": "placeholder"
   },
   {
