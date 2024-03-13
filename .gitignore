@@ -1,0 +1,15 @@
+.DS_Store
+.envrc
+coverage
+dist
+
+node_modules
+
+# Deprecated Tools
+.prettierrc
+.env.*
+.nvmrc
+
+.idea
+*.sublime-project
+*.sublime-workspace

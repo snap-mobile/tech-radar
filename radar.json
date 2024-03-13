@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Babel",
+    "ring": "adopt",
+    "quadrant": "tools",
+    "isNew": "TRUE",
+    "description": "test"
+  },
+  {
+    "name": "Apache Kafka",
+    "ring": "trial",
+    "quadrant": "languages & frameworks",
+    "isNew": "FALSE",
+    "description": "test"
+  },
+  {
+    "name": "Android-x86",
+    "ring": "assess",
+    "quadrant": "platforms",
+    "isNew": "TRUE",
+    "description": "test"
+  },
+  {
+    "name": "This is a Test - JR",
+    "ring": "hold",
+    "quadrant": "techniques",
+    "isNew": "FALSE",
+    "description": "test"
+  }
+]
