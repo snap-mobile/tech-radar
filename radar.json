@@ -1,30 +1,226 @@
 [
   {
-    "name": "Babel",
-    "ring": "adopt",
-    "quadrant": "tools",
-    "isNew": "TRUE",
-    "description": "test"
-  },
-  {
-    "name": "Apache Kafka",
-    "ring": "trial",
-    "quadrant": "languages & frameworks",
-    "isNew": "FALSE",
-    "description": "test"
-  },
-  {
-    "name": "Android-x86",
-    "ring": "assess",
-    "quadrant": "platforms",
-    "isNew": "TRUE",
-    "description": "test"
-  },
-  {
-    "name": "Update Radar",
-    "ring": "hold",
+    "name": "GitOps",
     "quadrant": "techniques",
+    "ring": "adopt",
     "isNew": "FALSE",
-    "description": "test"
+    "description": "placeholder"
+  },
+  {
+    "name": "Automatic merging of Software Update PRs",
+    "quadrant": "techniques",
+    "ring": "assess",
+    "isNew": "FALSE",
+    "description": "placeholder"
+  },
+  {
+    "name": "Web Component-based Design Systems",
+    "quadrant": "techniques",
+    "ring": "adopt",
+    "isNew": "FALSE",
+    "description": "placeholder"
+  },
+  {
+    "name": "JavaScript-based Design Systems",
+    "quadrant": "techniques",
+    "ring": "assess",
+    "isNew": "FALSE",
+    "description": "placeholder"
+  },
+  {
+    "name": "CI/CD via Feature Toggles",
+    "quadrant": "techniques",
+    "ring": "adopt",
+    "isNew": "FALSE",
+    "description": "placeholder"
+  },
+  {
+    "name": "Pre Mortem Exercises",
+    "quadrant": "techniques",
+    "ring": "adopt",
+    "isNew": "FALSE",
+    "description": "placeholder"
+  },
+  {
+    "name": "Software Load Testing",
+    "quadrant": "techniques",
+    "ring": "trial",
+    "isNew": "FALSE",
+    "description": "placeholder"
+  },
+  {
+    "name": "Rust",
+    "quadrant": "languages & frameworks",
+    "ring": "assess",
+    "isNew": "TRUE",
+    "description": "placeholder"
+  },
+  {
+    "name": "Playwright",
+    "quadrant": "languages & frameworks",
+    "ring": "trial",
+    "isNew": "FALSE",
+    "description": "placeholder"
+  },
+  {
+    "name": "Next.js",
+    "quadrant": "languages & frameworks",
+    "ring": "trial",
+    "isNew": "FALSE",
+    "description": "placeholder"
+  },
+  {
+    "name": "NX",
+    "quadrant": "languages & frameworks",
+    "ring": "trial",
+    "isNew": "FALSE",
+    "description": "placeholder"
+  },
+  {
+    "name": "OpenTelemetry",
+    "quadrant": "languages & frameworks",
+    "ring": "trial",
+    "isNew": "FALSE",
+    "description": "placeholder"
+  },
+  {
+    "name": "Prisma",
+    "quadrant": "tools",
+    "ring": "placeholder",
+    "isNew": "FALSE",
+    "description": "placeholder"
+  },
+  {
+    "name": "Snyk",
+    "quadrant": "tools",
+    "ring": "adopt",
+    "isNew": "FALSE",
+    "description": "placeholder"
+  },
+  {
+    "name": "Nuclei",
+    "quadrant": "tools",
+    "ring": "assess",
+    "isNew": "FALSE",
+    "description": "placeholder"
+  },
+  {
+    "name": "ScaleFusion MDM",
+    "quadrant": "tools",
+    "ring": "hold",
+    "isNew": "FALSE",
+    "description": "placeholder"
+  },
+  {
+    "name": "Bruno",
+    "quadrant": "tools",
+    "ring": "trial",
+    "isNew": "FALSE",
+    "description": "placeholder"
+  },
+  {
+    "name": "Teleport",
+    "quadrant": "tools",
+    "ring": "trial",
+    "isNew": "FALSE",
+    "description": "placeholder"
+  },
+  {
+    "name": "Fleet MDM",
+    "quadrant": "tools",
+    "ring": "trial",
+    "isNew": "FALSE",
+    "description": "placeholder"
+  },
+  {
+    "name": "Wazuh",
+    "quadrant": "tools",
+    "ring": "assess",
+    "isNew": "FALSE",
+    "description": "placeholder"
+  },
+  {
+    "name": "AI-assisted Coding",
+    "quadrant": "tools",
+    "ring": "assess",
+    "isNew": "FALSE",
+    "description": "placeholder"
+  },
+  {
+    "name": "Postman",
+    "quadrant": "tools",
+    "ring": "hold",
+    "isNew": "FALSE",
+    "description": "placeholder"
+  },
+  {
+    "name": "Insomnia",
+    "quadrant": "tools",
+    "ring": "hold",
+    "isNew": "FALSE",
+    "description": "placeholder"
+  },
+  {
+    "name": "Keycloak",
+    "quadrant": "tools",
+    "ring": "assess",
+    "isNew": "FALSE",
+    "description": "placeholder"
+  },
+  {
+    "name": "OrbStack",
+    "quadrant": "platforms",
+    "ring": "hold",
+    "isNew": "FALSE",
+    "description": "placeholder"
+  },
+  {
+    "name": "Docker Desktop",
+    "quadrant": "platforms",
+    "ring": "hold",
+    "isNew": "FALSE",
+    "description": "placeholder"
+  },
+  {
+    "name": "Crossplane",
+    "quadrant": "platforms",
+    "ring": "assess",
+    "isNew": "FALSE",
+    "description": "placeholder"
+  },
+  {
+    "name": "Colima",
+    "quadrant": "platforms",
+    "ring": "trial",
+    "isNew": "TRUE",
+    "description": "placeholder"
+  },
+  {
+    "name": "Temporal",
+    "quadrant": "platforms",
+    "ring": "adopt",
+    "isNew": "FALSE",
+    "description": "placeholder"
+  },
+  {
+    "name": "AWS Lambda and Serverless Functions",
+    "quadrant": "platforms",
+    "ring": "hold",
+    "isNew": "FALSE",
+    "description": "placeholder"
+  },
+  {
+    "name": "Podman",
+    "quadrant": "tools",
+    "ring": "trial",
+    "isNew": "FALSE",
+    "description": "placeholder"
+  },
+  {
+    "name": "Tilt",
+    "quadrant": "tools",
+    "ring": "trial",
+    "isNew": "FALSE",
+    "description": "placeholder"
   }
 ]
