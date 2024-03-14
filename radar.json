@@ -74,119 +74,119 @@
     "quadrant": "languages & frameworks",
     "ring": "trial",
     "isNew": "FALSE",
-    "description": "placeholder"
+    "description": "As <a href='https://nextjs.org/'><b>Next.js</b></a> ascends to become the official framework of React, we are strategically aligning with the framework by trialing Next as part of our tech stack. This decision is propelled by the JavaScript community's shift towards Server-Side Rendering (SSR) as the emerging development for JavaScript applications. Next.js stands to provide additional performance and SEO benefits to our web applications.<br><br>As we explore incorporating Next into our applications, we anticipate facing upcoming challenges, particularly around our Snap UI Toolki (SUIT) and Next's incorporation with NX. We're taking additional care towards evaluating the benefits of SSR-rendered applications versus a traditionally split frontend and backend architecture as we look to incorporate other backend languages into our stack."
   },
   {
     "name": "NX",
     "quadrant": "languages & frameworks",
     "ring": "trial",
     "isNew": "FALSE",
-    "description": "placeholder"
+    "description": "The JavaScript monorepo pattern (not to be confused with Git monorepos) has proven itself to be a more maintainable architecture for managing large codebases and maintaining strong separation of concerns. It has been battle tested in its use in prominent codebases like React, Babel, Angular and Jest. The pattern works by creating shippable services composed of shared sub-packages within the repository. These shared packages are housed within the repository using the standard NPM package format. <a href='https://nx.dev/'><b>NX</b></a> has become the dominant tool to faciliate the monorepo pattern and has overtaken Lerna as the defacto standard. NX provides a framework and a set of tooling that assists in managing your publishing process and eliminates much of the ceremony that comes with vendoring sub-packages by distributing commands across all dependencies during the development and build process."
   },
   {
     "name": "OpenTelemetry",
     "quadrant": "languages & frameworks",
     "ring": "trial",
     "isNew": "FALSE",
-    "description": "placeholder"
+    "description": "<a href='https://opentelemetry.io/'><b>OpenTelemetry</b></a> is an open source observability project that merges <a href='https://opentracing.io/'>OpenTracing</a> and <a href='https://github.com/census-instrumentation'>OpenCensus</a>. The OpenTelemetry project includes <a href='https://github.com/open-telemetry/opentelemetry-specification'>specification</a>, libraries, agents, and other components needed to capture telemetry from services to better observe, manage and debug them. It covers the three pillars of observability — distributed tracing, metrics and logging — and its specification connects these three pieces through <a href='https://github.com/open-telemetry/opentelemetry-specification/blob/master/specification/correlationcontext/api.md'>correlations</a>; thus you can use metrics to pinpoint a problem, locate the corresponding traces to discover where the problem occured, and ultimately study the corresponding logs to find the exact root cause. OpenTelemetry components can be connected to back-end observability systems such as Prometheus and Jaeger among others. Formation of OpenTracing is a positive step toward the convergence of standardization and the simplification of tooling. Many proprietary logging vendors like NewRelic and DataDog, are now providing support for OpenTelemetry. This could pose a potential boone to Snap, as its eliminates our dependence on specific log aggregation vendors."
   },
   {
     "name": "Prisma",
     "quadrant": "tools",
-    "ring": "placeholder",
+    "ring": "adopt",
     "isNew": "FALSE",
-    "description": "placeholder"
+    "description": "The main problem with the database tools that currently exist in the Node.js ecosystem is that they require a major tradeoff between productivity and control. With raw SQL (e.g. pg or mysql database drivers) you have full control over your database operations, however, productivity suffers. Traditional ORMs abstract away from SQL by letting you define your application models as <i>classes</i>, these classes are mapped to tables in the database. The mental model you have for your data is that of an <i>object</i>. The mental model for data in SQL on the other hand are <i>tables</i>.<br><br>The divide between these two different representations of data is often referred to as the object-relational impedance mismatch. While they make it seem that you can simply traverse relationships using familiar dot notation, under the hood the ORM generates SQL JOINs which are expensive and have the potential to drastically slow down your application (one symptom of this is the n+1 problem). The appeal of traditional ORMs is the premise of abstracting away the relational model and thinking about your data purely in terms of objects. While the premise is great, it's based on the wrong assumption that relational data can easily be mapped to objects which leads to lots of complications and pitfalls. <a href='https://www.prisma.io/'><b>Prisma ORM</b></a> aims to solve these problems by providing a clean API with declarative schemas, and type-safety. It focuses on queries as JSON data structures and returns plain old JavaScript objects. Developers should be able to ask for the data they need with an abstraction that makes the right decisions. Snap has seen great success with Prisma and recommends its adoption across the Engineering organization."
+  },
+  {
+    "name": "prisma-repo-next",
+    "quadrant": "tools",
+    "ring": "assess",
+    "isNew": "TRUE",
+    "description": ""
   },
   {
     "name": "Snyk",
     "quadrant": "tools",
     "ring": "adopt",
     "isNew": "FALSE",
-    "description": "placeholder"
+    "description": "<a href='https://snyk.io/'><b>Snyk</b></a> provides both static application security testing (SAST) and software component analysis (SCA) tests to help you find, fix and monitor security issues throughout the software development lifecycle. Its broad range of features is designed to speed up the feedback loop, favoring a shift-left approach instead of the <a href='https://www.thoughtworks.com/en-us/radar/techniques/security-sandwich'>security sandwich anti-pattern</a>. As one of the best security platforms available today, Snyk stands out because of its ability to identify a wider range of issues, enabled mainly by a <a href='https://docs.snyk.io/scan-application-code/snyk-open-source/starting-to-fix-vulnerabilities/using-the-snyk-vulnerability-database'>dedicated research team adding to its vulnerability database</a>. But there's room for improvement: the dashboard currently doesn't provide an easy way to filter noise down to specific actionable information; depending on the language ecosystem, SCA-based integrations can output false positives compared to pipeline-based integrations because Snyk has to guess what the resolved dependencies are; automated resolution is not consistently successful; and significant integration investment is required in order to achieve proper gatekeeping or to establish an SBOM in high regulatory environments. Despite these shortcomings, Snap recommends the adoption of Snyk across the organization."
   },
   {
     "name": "Nuclei",
     "quadrant": "tools",
     "ring": "assess",
     "isNew": "FALSE",
-    "description": "placeholder"
+    "description": "While the team currently uses <a href='https://www.stackhawk.com/'>StackHawk</a> to provide automated DAST scanning, it suffers from shortcomings and ultimately appears to provide a veneer over running <a href='https://www.zaproxy.org/'>OWASP Zap</a> with preconfigured settings enabled. <a href='https://projectdiscovery.io/nuclei'><b>Nuclei</b></a> is a promising and open source alternative that provides DAST scanning using a modern declarative Git-based approach. The team is currently assessing Nuclei as a viable alternative to StackHawk."
   },
   {
     "name": "ScaleFusion MDM",
     "quadrant": "tools",
     "ring": "hold",
     "isNew": "FALSE",
-    "description": "placeholder"
+    "description": "We currently use ScaleFusion to provide MDM capability to our mobile iOS and iPad devices, however its rollout is fret with issues and it might not be a tool that Snap wants to continue with in the long run. The team would recommend holding on further adoption of ScaleFusion MDM as we evaluate alternative options like <a href='https://micromdm.io/'><b>MicroMDM</b></a>. This is also in light of the team moving <a href='https://fleetdm.com/'><b>Fleet</b></a> into trial stages."
   },
   {
-    "name": "Bruno",
+    "name": "Bruno and Alternative(s)",
     "quadrant": "tools",
     "ring": "trial",
-    "isNew": "FALSE",
-    "description": "placeholder"
+    "isNew": "TRUE",
+    "description": "With increasing occurrence of paywalls, cloud logins, and commercial restrictions being imposed by tools like Postman and Insomnia, applications like <a href='https://www.usebruno.com/'><b>Bruno</b></a>, <a href='https://www.thunderclient.com/'><b>Thunder Client</b></a>, and <a href='https://hoppscotch.io/'>Hoppscotch</b></a> provide promising open source API clients and a viable alternative to commercial API clients. The team currently recommends that developers trial Bruno and other open source alternatives to avoid commercial licensing issues."
   },
   {
     "name": "Teleport",
     "quadrant": "tools",
     "ring": "trial",
-    "isNew": "FALSE",
-    "description": "placeholder"
+    "isNew": "TRUE",
+    "description": "<a href='https://goteleport.com/'><b>Teleport</b></a> is a tool for zero trust network access to infrastructure. Traditional setups require complex policies or jump servers to restrict access to critical resources. Teleport, however, simplifies this with a unified access plane and with fine-grained authorization controls that replace jump servers, VPNs or shared credentials. Implemented as a single binary with out-of-the-box support for several protocols (including SSH, RDP, Kubernetes API, MySQL, MongoDB and PostgreSQL wire protocols), Teleport makes it easy to set up and manage secured access across Linux, Windows or Kubernetes environments. We have seen a few companies in the security space adopt Teleport with great success and the overall positive experience prompted us to move it into trial stages."
   },
   {
     "name": "Fleet MDM",
     "quadrant": "tools",
     "ring": "trial",
-    "isNew": "FALSE",
-    "description": "placeholder"
+    "isNew": "TRUE",
+    "description": "Snap today does not deploy or maintain MDM on company laptop/desktop devices. To further our pursuit of the zero-trust security model, the team is evaluating the adoption of MDM tooling in this space. <a href='https://fleetdm.com/'><b>Fleet</b></a> provides vulnerability reporting, detection engineering, device management (MDM), device health monitoring, posture-based access control, managing unused software licenses, and more. We like that Fleet is developer-focused and designed with APIs, GitOps, and webhooks in mind. We are currently moving Fleet into trials stages within the Engineering team."
   },
   {
     "name": "Wazuh",
     "quadrant": "tools",
-    "ring": "assess",
-    "isNew": "FALSE",
-    "description": "placeholder"
+    "ring": "trial",
+    "isNew": "TRUE",
+    "description": "If a device were to be compromisd, it would take an attempted phishing attack or other exploit attempted from the device in order to us to respond. While we employ tools like <a href='https://www.cloudflare.com/zero-trust/products/email-security/'>CloudFlare Area 1</a> and <a href='https://www.lacework.com/'>Lacework</a> to detect these behaviors, we can also employ on-device tools to provide earlier awareness of compromised activity. <a href='https://wazuh.com/'><b>Wazuh</b></a> is an open source tool that logs on-device system information, like network activity, local user authentication, and removable media usage. It can then be used to detect threats and anomalous behavior both in realtime and as a forensics tool after a device has been compromised."
   },
   {
     "name": "AI-assisted Coding",
     "quadrant": "tools",
     "ring": "assess",
-    "isNew": "FALSE",
-    "description": "placeholder"
+    "isNew": "TRUE",
+    "description": "We are currently assessing the adoption of AI-assisted coding tools like <a href='https://github.com/features/copilot'><b>Github Copilot</b></a>, <a href='https://chat.openai.com/'><b>ChatGPT</b></a>, <a href='https://codeium.com/'><b>Codeium</b></a>, and <a href='https://aws.amazon.com/codewhisperer/'><b>AWS Codewhisperer</b></a>. Some challenges we aim to address during the assessments of these tools are: package and API hallucination vulnerabilities, ensuring that Snap's code style and quality standards are maintained as there is data to show that coding tools lower overall code quality, protecting Snap's intellectual property and ensuring we are not vulnerable to licensing issues."
   },
   {
-    "name": "Postman",
+    "name": "Postman and Insomnia",
     "quadrant": "tools",
     "ring": "hold",
     "isNew": "FALSE",
-    "description": "placeholder"
+    "description": "Postman and Insomnia, while sophisticated API GUI Clients, have become increasingly adversarial with nagware, holding data ransom, and anti-commercial licensing. Refrain from using Postman or Insomnia as there are a variety of rich open source alternatives. (see Bruno)"
   },
   {
-    "name": "Insomnia",
+    "name": "PNPM",
     "quadrant": "tools",
-    "ring": "hold",
-    "isNew": "FALSE",
-    "description": "placeholder"
+    "ring": "trial",
+    "isNew": "TRUE",
+    "description": "<a href='https://pnpm.io/'><b>pnpm</b></a> is an up-and-coming package manager for Node.js that we're moving to trials because of its higher speed and greater efficiency compared to other package managers. Dependencies are saved in a single place on the disk and are linked into the respective node_modules directories. pnpm also supports incremental optimization on file level, provides a solid API foundation to allow extension/customization and supports store server mode, which speeds up dependency download even more. We were initially concerned about using an alternative to NPM, as our experience has shown that NPM tends to find a way back in the project. But PNPM ships with NPM hooks that prevent NPM from running on projects once set up. Given that our team has a large number of projects with the same dependencies, pnpm might be a good choice. We are also trialing its use in Docker and Github Actions builds."
   },
   {
     "name": "Keycloak",
     "quadrant": "tools",
     "ring": "assess",
     "isNew": "FALSE",
-    "description": "placeholder"
+    "description": "In a microservices or any other distributed architecture, one of the most common needs is to secure the services or APIs through authentication and authorization features. This is where Keycloak comes in. Keycloak is an open source identity and access management solution that makes it easy to secure applications or microservices with little to no code. Out of the box, it supports single sign-on, social login, and standard protocols such as OpenID Connect, OAuth2 and SAML. Our team is currently assessing Keycloak as an internal tool to act as an open source replacement for Okta functionality. We are also evaluating its use as a 3rd-party auth bridge for our User Directory service."
   },
   {
-    "name": "OrbStack",
+    "name": "Docker Desktop and OrbStack",
     "quadrant": "platforms",
     "ring": "hold",
     "isNew": "FALSE",
-    "description": "placeholder"
-  },
-  {
-    "name": "Docker Desktop",
-    "quadrant": "platforms",
-    "ring": "hold",
-    "isNew": "FALSE",
-    "description": "placeholder"
+    "description": "Docker Desktop is increasingly adding paid enterprise features and has modified its licensing terms so that it can not be used for commercial projects. Avoid use of Docker Desktop, as we move open source solutions like Colima and Podman into trials. Likewise, <a href='https://orbstack.dev/'><b>OrbStack</b></a> is another Docker Desktop alternative with neat features, but expressly forbids free use to build commercial projects. Avoid using it."
   },
   {
     "name": "Crossplane",
