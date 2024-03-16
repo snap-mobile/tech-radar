@@ -102,7 +102,7 @@
     "quadrant": "tools",
     "ring": "assess",
     "isNew": "TRUE",
-    "description": ""
+    "description": "While we like Prisma, it is also lacking in many areas. In particular Prisma encourages calling queries directly throughout your codebase, making it an unwieldy foot gun. The repository pattern can alleviate this by providing an abstraction that sits between our data models and our data persistence layer. <a href='https://github.com/krsbx/prisma-repo-next'><b>prisma-repo-next</b></a> is a library that automatically generates a repository in the same vein as Ecto or ActiveRecord. We're hoping this cleans up the architecture in our projects a bit, as only through the clearly defined 'repository' interface are you able to interact with your data persistence layer. With this approach, all database queries lie only inside the repository and the caller is not burdened with the implementation details of how the repository interacts with the database (or with external APIs)."
   },
   {
     "name": "Snyk",
@@ -116,14 +116,14 @@
     "quadrant": "tools",
     "ring": "assess",
     "isNew": "FALSE",
-    "description": "While the team currently uses <a href='https://www.stackhawk.com/'>StackHawk</a> to provide automated DAST scanning, it suffers from shortcomings and ultimately appears to provide a veneer over running <a href='https://www.zaproxy.org/'>OWASP Zap</a> with preconfigured settings enabled. <a href='https://projectdiscovery.io/nuclei'><b>Nuclei</b></a> is a promising and open source alternative that provides DAST scanning using a modern declarative Git-based approach. The team is currently assessing Nuclei as a viable alternative to StackHawk."
+    "description": "While the team currently uses <a href='https://www.stackhawk.com/'>StackHawk</a> to provide automated DAST scanning, it suffers from shortcomings and ultimately appears to provide a veneer over running <a href='https://www.zaproxy.org/'>OWASP Zap</a> (with preconfigured settings enabled). <a href='https://projectdiscovery.io/nuclei'><b>Nuclei</b></a> is a promising and open source alternative that provides DAST scanning using a modern declarative Git-based approach. The team is currently assessing Nuclei as a viable alternative to StackHawk."
   },
   {
     "name": "ScaleFusion MDM",
     "quadrant": "tools",
     "ring": "hold",
     "isNew": "FALSE",
-    "description": "We currently use ScaleFusion to provide MDM capability to our mobile iOS and iPad devices, however its rollout is fret with issues and it might not be a tool that Snap wants to continue with in the long run. The team would recommend holding on further adoption of ScaleFusion MDM as we evaluate alternative options like <a href='https://micromdm.io/'><b>MicroMDM</b></a>. This is also in light of the team moving <a href='https://fleetdm.com/'><b>Fleet</b></a> into trial stages."
+    "description": "We currently use ScaleFusion to provide MDM capability to our mobile iOS and iPad devices, however its rollout is fret with issues and we're interestd in alternatives. The team would recommend holding on further adoption of ScaleFusion MDM as we evaluate options like <a href='https://micromdm.io/'><b>MicroMDM</b></a>."
   },
   {
     "name": "Bruno and Alternative(s)",
@@ -144,14 +144,14 @@
     "quadrant": "tools",
     "ring": "trial",
     "isNew": "TRUE",
-    "description": "Snap today does not deploy or maintain MDM on company laptop/desktop devices. To further our pursuit of the zero-trust security model, the team is evaluating the adoption of MDM tooling in this space. <a href='https://fleetdm.com/'><b>Fleet</b></a> provides vulnerability reporting, detection engineering, device management (MDM), device health monitoring, posture-based access control, managing unused software licenses, and more. We like that Fleet is developer-focused and designed with APIs, GitOps, and webhooks in mind. We are currently moving Fleet into trials stages within the Engineering team."
+    "description": "Snap today does not deploy or maintain MDM on laptop and desktop devices. To further our pursuit of the zero-trust security model, the team is evaluating the adoption of MDM tooling in this space. <a href='https://fleetdm.com/'><b>Fleet</b></a> provides vulnerability reporting, detection engineering, device management (MDM), device health monitoring, posture-based access control, managing unused software licenses, and more. We like that Fleet is developer-focused and designed with APIs, GitOps, and webhooks in mind. We are currently moving Fleet into trial stages within the Engineering team."
   },
   {
     "name": "Wazuh",
     "quadrant": "tools",
     "ring": "trial",
     "isNew": "TRUE",
-    "description": "If a device were to be compromisd, it would take an attempted phishing attack or other exploit attempted from the device in order to us to respond. While we employ tools like <a href='https://www.cloudflare.com/zero-trust/products/email-security/'>CloudFlare Area 1</a> and <a href='https://www.lacework.com/'>Lacework</a> to detect these behaviors, we can also employ on-device tools to provide earlier awareness of compromised activity. <a href='https://wazuh.com/'><b>Wazuh</b></a> is an open source tool that logs on-device system information, like network activity, local user authentication, and removable media usage. It can then be used to detect threats and anomalous behavior both in realtime and as a forensics tool after a device has been compromised."
+    "description": "While we employ tools like <a href='https://www.cloudflare.com/zero-trust/products/email-security/'>CloudFlare Area 1</a> and <a href='https://www.lacework.com/'>Lacework</a> to detect compromised accounts, there is an increasing need for on-device tools to provide earlier awareness of compromised activity. <a href='https://wazuh.com/'><b>Wazuh</b></a> is an open source tool that logs on-device system information, like network activity, local user authentication, and removable media usage. It can then be used to detect threats and anomalous behavior both in realtime and as a forensics tool after a device has been compromised."
   },
   {
     "name": "AI-assisted Coding",
@@ -179,69 +179,69 @@
     "quadrant": "tools",
     "ring": "assess",
     "isNew": "FALSE",
-    "description": "In a microservices or any other distributed architecture, one of the most common needs is to secure the services or APIs through authentication and authorization features. This is where Keycloak comes in. Keycloak is an open source identity and access management solution that makes it easy to secure applications or microservices with little to no code. Out of the box, it supports single sign-on, social login, and standard protocols such as OpenID Connect, OAuth2 and SAML. Our team is currently assessing Keycloak as an internal tool to act as an open source replacement for Okta functionality. We are also evaluating its use as a 3rd-party auth bridge for our User Directory service."
+    "description": "<a href='https://www.keycloak.org/'><b>Keycloak</b></a> is an open source identity and access management solution that makes it easy to secure applications or microservices with little to no code. It has nearly all of the features provided by Okta with out of the box support for single sign-on, social login, and standard protocols such as OpenID Connect, OAuth2 and SAML. Our team is currently assessing Keycloak as an internal tool to act as an open source replacement for Okta. We are also evaluating its use as a 3rd-party auth bridge for our User Directory service."
   },
   {
     "name": "Docker Desktop and OrbStack",
     "quadrant": "platforms",
     "ring": "hold",
     "isNew": "FALSE",
-    "description": "Docker Desktop is increasingly adding paid enterprise features and has modified its licensing terms so that it can not be used for commercial projects. Avoid use of Docker Desktop, as we move open source solutions like Colima and Podman into trials. Likewise, <a href='https://orbstack.dev/'><b>OrbStack</b></a> is another Docker Desktop alternative with neat features, but expressly forbids free use to build commercial projects. Avoid using it."
+    "description": "Docker Desktop is increasingly adding paid enterprise features and has modified its licensing terms so that it can not be used for commercial projects. Use of Docker Desktop is prohibited and against Docker's licensing terms. Please trial open source solutions like Colima and Podman. Likewise, <a href='https://orbstack.dev/'><b>OrbStack</b></a> is another Docker Desktop alternative that expressly forbids free use to build commercial projects. Avoid using OrbStack."
   },
   {
     "name": "Crossplane",
     "quadrant": "platforms",
-    "ring": "assess",
+    "ring": "trial",
     "isNew": "FALSE",
-    "description": "placeholder"
+    "description": "Transitioning from Terraform, Crossplane is a CNCF-backed platform that introduces a Kubernetes-native approach to infrastructure management. It eliminates the need to manage Terraform state files or manual build and reconciliation processes and enables provisioning of cloud infrastructure (like RDS databases) and 3rd party services directly through Kubernetes APIs. Crossplane allows for the creation of custom resource definitions to abstract cloud services across providers. Unlike Terraform, Crossplane also leverages the power of Kubernetes to provide continuous reconciliation and self-healing capabilities. This strategic shift could provide a significant advantage over traditional Terraform approaches by simplifying deployment and maintenance of cloud-native applications and services."
   },
   {
     "name": "Argo CD",
     "quadrant": "platforms",
-    "ring": "assess",
+    "ring": "trial",
     "isNew": "TRUE",
-    "description": "placeholder"
+    "description": "While FluxCD carries some advantages. <a href='https://argoproj.github.io/cd/'><b>Argo</b></a> has emerged as the defacto standard for CI/CD in Kubernetes with Kubernetes polls showing a 4 to 1 adoption ratio over Flux. Argo CD also provides a developer-friendly build system and UI, making it possible to use Argo entirely without the use intermediary build runners like Circle CI or Github Actions. Given the turmoil that the Flux project has gone through with its primary contributor (WeaveWorks) no longer maintaining the project, it is a good time for the team to explore the adoption of Argo. Argo also has an advantage in that it provides tooling that can handle data science and ML workloads in addition to CI/CD."
   },
   {
     "name": "Kargo",
     "quadrant": "platforms",
     "ring": "assess",
     "isNew": "TRUE",
-    "description": "placeholder"
+    "description": "<a href='https://akuity.io/what-is-kargo/'><b>Kargo</b></a> is a next-generation continuous delivery and application lifecycle orchestration platform that upon Argo and uses GitOps principles to streamline and automate the progressive rollout of changes across the many stages of an application's lifecycle. It provides a layer that is able to track the lifecycle of an application across dev/staging/production rollouts and across multiple clusters. It also provides a friendly user interface to visualize, rollback, and promote an application across these stages."
   },
   {
     "name": "Colima",
     "quadrant": "platforms",
     "ring": "trial",
     "isNew": "TRUE",
-    "description": "placeholder"
+    "description": "<a href='https://github.com/abiosoft/colima'><b>Colima</b></a> has become the go-to alternative to Docker Desktop on macOS for many dev teams. We'd be remiss not to trial Colima alongside Podman.  Colima is used to provision the Docker container run time in a <a href='https://github.com/lima-vm/lima'>Lima VM</a>, to configure the Docker CLI on macOS and to handle port-forwarding and volume mounts. Colima can be configured to run <a href='https://containerd.io/'>containerd</a> as its run time, which is also the run time on most managed Kubernetes services, improving the important dev-prod parity."
   },
   {
     "name": "Temporal",
     "quadrant": "platforms",
     "ring": "adopt",
     "isNew": "FALSE",
-    "description": "placeholder"
+    "description": "<a href='https://temporal.io/'><b>Temporal</b></a> is a platform for developing long-running workflows, particularly for microservice architectures. A fork of Uber's previous OSS Cadence project, it has an event-sourcing model for long-running workflows so they can survive process/machine crashes. Building off the backs of past orchestration services, Temporal takes a different approach by focusing on orchestration over choreography and writing logic within your own tech stack."
   },
   {
     "name": "AWS Lambda and Serverless Functions",
     "quadrant": "platforms",
     "ring": "hold",
     "isNew": "FALSE",
-    "description": "placeholder"
+    "description": "We enforce deployment and CI/CD standards following best practices in Kubernetes. Teams should avoid using Serverless as they receive limited support from Snap and lack many quality control checks. While AWS Lambda is easy to deploy, we've seen that teams when teams deploy serverless to production, their projects have lacked QC build processes, observability, database connection management, GraphQL federation, network routing, and many security features that our Kubernetes systems provide out of the box."
   },
   {
     "name": "Podman",
     "quadrant": "tools",
     "ring": "trial",
     "isNew": "FALSE",
-    "description": "placeholder"
+    "description": "<a href='https://podman-desktop.io/'><b>Podman</b></a> is a free and open source alternative to Docker + Docker Desktop, which has increasingly restricted its licensing. Podman has a different conceptual approach to containers. As hinted by the name, Podman can create container 'pods' that work together, a feature resembling the Kubernetes pods. Pods organize separate containers under a common denomination to manage them as single units. Another defining feature of Podman is that it is daemon-less."
   },
   {
-    "name": "Tilt",
+    "name": "DevSpace",
     "quadrant": "tools",
     "ring": "trial",
-    "isNew": "FALSE",
-    "description": "placeholder"
+    "isNew": "TRUE",
+    "description": "<a href='https://www.devspace.sh/'><b>DevSpace</b></a> is a competitor to Tilt (now Docker owned) and Skaffold (Google). It is created by the team behind DevPod (Github Workspace alternative). DevSpace allows working in a complete local or remote dev environment configured for your team and automates all the steps from a code change to a new process: watching files, building container images, and bringing your environment up-to-date. Whereas other tools focused on providing file or container-based development, DevSpace provides all virtual services and databases needed for a complete working environment with hotreload capability. We were previously looking into Tilt but were concerned with its recent acquisition by Docker. We are moving DevSpace into trial given that it allows both remote developent, and native Kubernetes-based development, allowing developers to work in an 'as close to production' environment as possible."
   }
 ]
