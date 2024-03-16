@@ -49,6 +49,13 @@
     "description": "Recognizing the challenges we've faced in identifying performance bottlenecks in our past projects, the necessity of Software Load Testing has become increasingly clear. This allows us to simulate high-usage conditions to ensure our applications can handle expected traffic volumes and interactions without degradation in performance. By integrating Software Load Testing into our development lifecycle, we aim to preemptively identify and address potential issues, enhancing the robustness and scalability of our systems."
   },
   {
+    "name": "Elixir",
+    "quadrant": "languages & frameworks",
+    "ring": "assess",
+    "isNew": "TRUE",
+    "description": "<a href='https://www.rust-lang.org/'><b>Elixir</b></a> is an elegant functional programming language focusing on concurrency, fault tolerance, and developer productivity, alongside a vibrant community and ecosystem. It has a lightweight process model, enabling millions of processes to run concurrently on the same virtual machine. Elixir leverages the Erlang VM, which is a language proven in its fault tolerance and used to power communications across global satellite and telecommunication networks. Its <a href='https://www.phoenixframework.org/'><b>Phoenix</b></a> web framework is designed for high productivity and maintainability, making the best use of Elixir's concurrent features."
+  },
+  {
     "name": "Rust",
     "quadrant": "languages & frameworks",
     "ring": "assess",
@@ -67,7 +74,7 @@
     "quadrant": "languages & frameworks",
     "ring": "trial",
     "isNew": "TRUE",
-    "description": "As a load testing tool, <a href='https://k6.io/'><b>K6</b></a> distinguishes itself through its developer-centric design and its capability to simulate complex user behaviors and traffic patterns, offering more nuanced insight into system performance under various stress conditions. With its ability to send telemetry data to <a href='https://k6.io/docs/results-output/real-time/new-relic/'>New Relic</a>, K6 also facilitates real-time performance monitoring. By moving K6 into 'Trial' within our development workflow, we are not only aiming to boost our applications' efficiency but also to ensure the robustness of our systems."
+    "description": "<a href='https://k6.io/'><b>K6</b></a> distinguishes itself as a load testing tool through its developer-centric design and its capability to simulate complex user behaviors and traffic patterns, offering more nuanced insight into system performance under various stress conditions. With its ability to send telemetry data to <a href='https://k6.io/docs/results-output/real-time/new-relic/'>New Relic</a>, K6 also facilitates real-time performance monitoring. By moving K6 into 'Trial' within our development workflow, we are not only aiming to boost our applications' efficiency but also to ensure the robustness of our systems."
   },
   {
     "name": "Next.js",
@@ -81,7 +88,7 @@
     "quadrant": "languages & frameworks",
     "ring": "trial",
     "isNew": "FALSE",
-    "description": "The JavaScript monorepo pattern (not to be confused with Git monorepos) has proven itself to be a more maintainable architecture for managing large codebases and maintaining strong separation of concerns. It has been battle tested in its use in prominent codebases like React, Babel, Angular and Jest. The pattern works by creating shippable services composed of shared sub-packages within the repository. These shared packages are housed within the repository using the standard NPM package format. <a href='https://nx.dev/'><b>NX</b></a> has become the dominant tool to faciliate the monorepo pattern and has overtaken Lerna as the defacto standard. NX provides a framework and a set of tooling that assists in managing your publishing process and eliminates much of the ceremony that comes with vendoring sub-packages by distributing commands across all dependencies during the development and build process."
+    "description": "<a href='https://nx.dev/'><b>NX</b></a> has become the dominant tool to faciliate the monorepo pattern and has overtaken Lerna as the defacto standard. The JavaScript monorepo pattern (not to be confused with Git monorepos) has proven itself to be a more maintainable architecture for managing large codebases and maintaining strong separation of concerns. It has been battle tested in its use in prominent codebases like React, Babel, Angular and Jest. The pattern works by creating shippable services composed of shared sub-packages within the repository. These shared packages are housed within the repository using the standard NPM package format. NX provides a framework and a set of tooling that assists in managing your publishing process and eliminates much of the ceremony that comes with vendoring sub-packages by distributing commands across all dependencies during the development and build process."
   },
   {
     "name": "OpenTelemetry",
@@ -91,15 +98,15 @@
     "description": "<a href='https://opentelemetry.io/'><b>OpenTelemetry</b></a> is an open source observability project that merges <a href='https://opentracing.io/'>OpenTracing</a> and <a href='https://github.com/census-instrumentation'>OpenCensus</a>. The OpenTelemetry project includes <a href='https://github.com/open-telemetry/opentelemetry-specification'>specification</a>, libraries, agents, and other components needed to capture telemetry from services to better observe, manage and debug them. It covers the three pillars of observability — distributed tracing, metrics and logging — and its specification connects these three pieces through <a href='https://github.com/open-telemetry/opentelemetry-specification/blob/master/specification/correlationcontext/api.md'>correlations</a>; thus you can use metrics to pinpoint a problem, locate the corresponding traces to discover where the problem occured, and ultimately study the corresponding logs to find the exact root cause. OpenTelemetry components can be connected to back-end observability systems such as Prometheus and Jaeger among others. Formation of OpenTracing is a positive step toward the convergence of standardization and the simplification of tooling. Many proprietary logging vendors like NewRelic and DataDog, are now providing support for OpenTelemetry. This could pose a potential boone to Snap, as its eliminates our dependence on specific log aggregation vendors."
   },
   {
-    "name": "Prisma",
+    "name": "Prisma ORM",
     "quadrant": "tools",
     "ring": "adopt",
     "isNew": "FALSE",
-    "description": "The main problem with the database tools that currently exist in the Node.js ecosystem is that they require a major tradeoff between productivity and control. With raw SQL (e.g. pg or mysql database drivers) you have full control over your database operations, however, productivity suffers. Traditional ORMs abstract away from SQL by letting you define your application models as <i>classes</i>, these classes are mapped to tables in the database. The mental model you have for your data is that of an <i>object</i>. The mental model for data in SQL on the other hand are <i>tables</i>.<br><br>The divide between these two different representations of data is often referred to as the object-relational impedance mismatch. While they make it seem that you can simply traverse relationships using familiar dot notation, under the hood the ORM generates SQL JOINs which are expensive and have the potential to drastically slow down your application (one symptom of this is the n+1 problem). The appeal of traditional ORMs is the premise of abstracting away the relational model and thinking about your data purely in terms of objects. While the premise is great, it's based on the wrong assumption that relational data can easily be mapped to objects which leads to lots of complications and pitfalls. <a href='https://www.prisma.io/'><b>Prisma ORM</b></a> aims to solve these problems by providing a clean API with declarative schemas, and type-safety. It focuses on queries as JSON data structures and returns plain old JavaScript objects. Developers should be able to ask for the data they need with an abstraction that makes the right decisions. Snap has seen great success with Prisma and recommends its adoption across the Engineering organization."
+    "description": "<a href='https://www.prisma.io/'><b>Prisma</b></a> aims to solve the problems of traditional Node.js ORMs by providing a clean API with declarative schemas, and type-safety. It focuses on queries as JSON data structures and returns plain old JavaScript objects. Snap has seen great success with Prisma and recommends its adoption across the Engineering organization.<br><br>Traditional ORMs abstract away from SQL by letting you define your application models as <i>classes</i>, but the mental model you have for your data is that of an <i>object</i>. However, the mental model for data in SQL are <i>tables</i>. The divide between these different representations of data is often referred to as the 'object-relational impedance mismatch'. While the premise is great, it's based on the wrong assumption that relational data can easily be mapped to objects which leads to lots of complications and pitfalls. Prisma offers a different take that aims to address these issues."
   },
   {
     "name": "prisma-repo-next",
-    "quadrant": "tools",
+    "quadrant": "languages & frameworks",
     "ring": "assess",
     "isNew": "TRUE",
     "description": "While we like Prisma, it is also lacking in many areas. In particular Prisma encourages calling queries directly throughout your codebase, making it an unwieldy foot gun. The repository pattern can alleviate this by providing an abstraction that sits between our data models and our data persistence layer. <a href='https://github.com/krsbx/prisma-repo-next'><b>prisma-repo-next</b></a> is a library that automatically generates a repository in the same vein as Ecto or ActiveRecord. We're hoping this cleans up the architecture in our projects a bit, as only through the clearly defined 'repository' interface are you able to interact with your data persistence layer. With this approach, all database queries lie only inside the repository and the caller is not burdened with the implementation details of how the repository interacts with the database (or with external APIs)."
@@ -107,7 +114,7 @@
   {
     "name": "Snyk",
     "quadrant": "tools",
-    "ring": "adopt",
+    "ring": "hold",
     "isNew": "FALSE",
     "description": "<a href='https://snyk.io/'><b>Snyk</b></a> provides both static application security testing (SAST) and software component analysis (SCA) tests to help you find, fix and monitor security issues throughout the software development lifecycle. Its broad range of features is designed to speed up the feedback loop, favoring a shift-left approach instead of the <a href='https://www.thoughtworks.com/en-us/radar/techniques/security-sandwich'>security sandwich anti-pattern</a>. As one of the best security platforms available today, Snyk stands out because of its ability to identify a wider range of issues, enabled mainly by a <a href='https://docs.snyk.io/scan-application-code/snyk-open-source/starting-to-fix-vulnerabilities/using-the-snyk-vulnerability-database'>dedicated research team adding to its vulnerability database</a>. But there's room for improvement: the dashboard currently doesn't provide an easy way to filter noise down to specific actionable information; depending on the language ecosystem, SCA-based integrations can output false positives compared to pipeline-based integrations because Snyk has to guess what the resolved dependencies are; automated resolution is not consistently successful; and significant integration investment is required in order to achieve proper gatekeeping or to establish an SBOM in high regulatory environments. Despite these shortcomings, Snap recommends the adoption of Snyk across the organization."
   },
@@ -116,14 +123,14 @@
     "quadrant": "tools",
     "ring": "assess",
     "isNew": "FALSE",
-    "description": "While the team currently uses <a href='https://www.stackhawk.com/'>StackHawk</a> to provide automated DAST scanning, it suffers from shortcomings and ultimately appears to provide a veneer over running <a href='https://www.zaproxy.org/'>OWASP Zap</a> (with preconfigured settings enabled). <a href='https://projectdiscovery.io/nuclei'><b>Nuclei</b></a> is a promising and open source alternative that provides DAST scanning using a modern declarative Git-based approach. The team is currently assessing Nuclei as a viable alternative to StackHawk."
+    "description": "<a href='https://projectdiscovery.io/nuclei'><b>Nuclei</b></a> is a promising and open source alternative that provides DAST scanning using a modern declarative Git-based approach. The team is currently assessing Nuclei as a viable alternative to StackHawk. While the team currently uses <a href='https://www.stackhawk.com/'>StackHawk</a> to provide automated DAST scanning, it suffers from shortcomings and ultimately appears to provide a veneer over running <a href='https://www.zaproxy.org/'>OWASP Zap</a> (with preconfigured settings enabled)."
   },
   {
     "name": "ScaleFusion MDM",
     "quadrant": "tools",
     "ring": "hold",
     "isNew": "FALSE",
-    "description": "We currently use ScaleFusion to provide MDM capability to our mobile iOS and iPad devices, however its rollout is fret with issues and we're interestd in alternatives. The team would recommend holding on further adoption of ScaleFusion MDM as we evaluate options like <a href='https://micromdm.io/'><b>MicroMDM</b></a>."
+    "description": "We currently use <a href='https://scalefusion.com/'><b>ScaleFusion</b></a> to provide MDM capability to our mobile iOS and iPad devices, however its rollout is fret with issues and we're interestd in alternatives. The team would recommend holding on further adoption of ScaleFusion MDM as we evaluate options like <a href='https://micromdm.io/'><b>MicroMDM</b></a>."
   },
   {
     "name": "Bruno and Alternative(s)",
@@ -144,7 +151,7 @@
     "quadrant": "tools",
     "ring": "trial",
     "isNew": "TRUE",
-    "description": "Snap today does not deploy or maintain MDM on laptop and desktop devices. To further our pursuit of the zero-trust security model, the team is evaluating the adoption of MDM tooling in this space. <a href='https://fleetdm.com/'><b>Fleet</b></a> provides vulnerability reporting, detection engineering, device management (MDM), device health monitoring, posture-based access control, managing unused software licenses, and more. We like that Fleet is developer-focused and designed with APIs, GitOps, and webhooks in mind. We are currently moving Fleet into trial stages within the Engineering team."
+    "description": "<a href='https://fleetdm.com/'><b>Fleet</b></a> provides vulnerability reporting, detection engineering, device management (MDM), device health monitoring, posture-based access control, managing unused software licenses, and more. We like that Fleet is developer-focused and designed with APIs, GitOps, and webhooks in mind. We are currently moving Fleet into trial stages within the team. Snap today does not deploy or maintain MDM on laptop and desktop devices. To further our pursuit of the zero-trust security model, the team is evaluating the adoption of MDM tooling in this space. "
   },
   {
     "name": "Wazuh",
@@ -165,7 +172,7 @@
     "quadrant": "tools",
     "ring": "hold",
     "isNew": "FALSE",
-    "description": "Postman and Insomnia, while sophisticated API GUI Clients, have become increasingly adversarial with nagware, holding data ransom, and anti-commercial licensing. Refrain from using Postman or Insomnia as there are a variety of rich open source alternatives. (see Bruno)"
+    "description": "<a href='https://www.postman.com/'><b>Postman</b></a> and <a href='https://insomnia.rest/'><b>Insomnia</b></a>, while sophisticated API GUI Clients, have become increasingly adversarial with nagware, holding data ransom, and anti-commercial licensing. Refrain from using Postman or Insomnia as there are a variety of rich open source alternatives. (see Bruno and ThunderClient)"
   },
   {
     "name": "PNPM",
@@ -186,28 +193,28 @@
     "quadrant": "platforms",
     "ring": "hold",
     "isNew": "FALSE",
-    "description": "Docker Desktop is increasingly adding paid enterprise features and has modified its licensing terms so that it can not be used for commercial projects. Use of Docker Desktop is prohibited and against Docker's licensing terms. Please trial open source solutions like Colima and Podman. Likewise, <a href='https://orbstack.dev/'><b>OrbStack</b></a> is another Docker Desktop alternative that expressly forbids free use to build commercial projects. Avoid using OrbStack."
+    "description": "<a href='https://www.docker.com/products/docker-desktop/'><b>Docker Desktop</b></a> is increasingly adding paid enterprise features and has modified its licensing terms so that it can not be used for commercial projects. Use of Docker Desktop is prohibited and against Docker's licensing terms. Please trial open source solutions like Colima and Podman. Likewise, <a href='https://orbstack.dev/'><b>OrbStack</b></a> is another Docker Desktop alternative that expressly forbids free use to build commercial projects. Avoid using OrbStack."
   },
   {
     "name": "Crossplane",
     "quadrant": "platforms",
     "ring": "trial",
-    "isNew": "FALSE",
-    "description": "Transitioning from Terraform, Crossplane is a CNCF-backed platform that introduces a Kubernetes-native approach to infrastructure management. It eliminates the need to manage Terraform state files or manual build and reconciliation processes and enables provisioning of cloud infrastructure (like RDS databases) and 3rd party services directly through Kubernetes APIs. Crossplane allows for the creation of custom resource definitions to abstract cloud services across providers. Unlike Terraform, Crossplane also leverages the power of Kubernetes to provide continuous reconciliation and self-healing capabilities. This strategic shift could provide a significant advantage over traditional Terraform approaches by simplifying deployment and maintenance of cloud-native applications and services."
+    "isNew": "TRUE",
+    "description": "<a href='https://www.crossplane.io/'><b>Crossplane</b></a> is a CNCF-backed platform that evolves beyond Terraform to introduce a Kubernetes-native approach to infrastructure management. It eliminates the need to manage Terraform state files or manual build and reconciliation processes and enables provisioning of cloud infrastructure (like RDS databases) and 3rd party services directly through Kubernetes APIs. Crossplane allows for the creation of custom resource definitions to abstract cloud services across providers. Unlike Terraform, Crossplane also leverages the power of Kubernetes to provide continuous reconciliation and self-healing capabilities. In light of recent efforts by HashiCorp to increasingly commercialize Terraform and restrict its commercial licensing, shifting to Crossplane offers a significant advantage over the traditional Terraform approach by simplifying deployment and maintenance of cloud-native services."
   },
   {
     "name": "Argo CD",
     "quadrant": "platforms",
     "ring": "trial",
     "isNew": "TRUE",
-    "description": "While FluxCD carries some advantages. <a href='https://argoproj.github.io/cd/'><b>Argo</b></a> has emerged as the defacto standard for CI/CD in Kubernetes with Kubernetes polls showing a 4 to 1 adoption ratio over Flux. Argo CD also provides a developer-friendly build system and UI, making it possible to use Argo entirely without the use intermediary build runners like Circle CI or Github Actions. Given the turmoil that the Flux project has gone through with its primary contributor (WeaveWorks) no longer maintaining the project, it is a good time for the team to explore the adoption of Argo. Argo also has an advantage in that it provides tooling that can handle data science and ML workloads in addition to CI/CD."
+    "description": "<a href='https://argoproj.github.io/cd/'><b>Argo</b></a> has emerged as the defacto standard for CI/CD in Kubernetes with Kubernetes polls showing a 4 to 1 adoption ratio over Flux. Argo CD also provides a developer-friendly build system and UI, making it possible to use Argo entirely without the use intermediary build runners like Circle CI or Github Actions. Given the turmoil that the Flux project has gone through with its primary contributor (WeaveWorks) no longer maintaining the project, it is a good time for the team to explore the adoption of Argo. Argo also has an advantage in that it provides tooling that can handle data science and ML workloads in addition to CI/CD."
   },
   {
     "name": "Kargo",
     "quadrant": "platforms",
     "ring": "assess",
     "isNew": "TRUE",
-    "description": "<a href='https://akuity.io/what-is-kargo/'><b>Kargo</b></a> is a next-generation continuous delivery and application lifecycle orchestration platform that upon Argo and uses GitOps principles to streamline and automate the progressive rollout of changes across the many stages of an application's lifecycle. It provides a layer that is able to track the lifecycle of an application across dev/staging/production rollouts and across multiple clusters. It also provides a friendly user interface to visualize, rollback, and promote an application across these stages."
+    "description": "<a href='https://akuity.io/what-is-kargo/'><b>Kargo</b></a> is a next-generation continuous delivery and application lifecycle orchestration platform that builds upon Argo and uses GitOps principles to streamline and automate the progressive rollout of changes across the many stages of an application's lifecycle. It provides a layer that is able to track the lifecycle of an application across dev/staging/production rollouts and across multiple clusters. It also provides a friendly user interface to visualize, rollback, and promote an application across these stages."
   },
   {
     "name": "Colima",
@@ -232,16 +239,16 @@
   },
   {
     "name": "Podman",
-    "quadrant": "tools",
+    "quadrant": "platforms",
     "ring": "trial",
     "isNew": "FALSE",
-    "description": "<a href='https://podman-desktop.io/'><b>Podman</b></a> is a free and open source alternative to Docker + Docker Desktop, which has increasingly restricted its licensing. Podman has a different conceptual approach to containers. As hinted by the name, Podman can create container 'pods' that work together, a feature resembling the Kubernetes pods. Pods organize separate containers under a common denomination to manage them as single units. Another defining feature of Podman is that it is daemon-less."
+    "description": "<a href='https://podman-desktop.io/'><b>Podman</b></a> is a free and open source alternative to Docker + Docker Desktop. Podman has a different conceptual approach to containers. As hinted by the name, Podman can create container <i>'pods'</i> that work together, a feature resembling the Kubernetes pods. Pods organize separate containers under a common denomination to manage them as single units. Another defining feature of Podman is that it is daemon-less."
   },
   {
     "name": "DevSpace",
-    "quadrant": "tools",
+    "quadrant": "platforms",
     "ring": "trial",
     "isNew": "TRUE",
-    "description": "<a href='https://www.devspace.sh/'><b>DevSpace</b></a> is a competitor to Tilt (now Docker owned) and Skaffold (Google). It is created by the team behind DevPod (Github Workspace alternative). DevSpace allows working in a complete local or remote dev environment configured for your team and automates all the steps from a code change to a new process: watching files, building container images, and bringing your environment up-to-date. Whereas other tools focused on providing file or container-based development, DevSpace provides all virtual services and databases needed for a complete working environment with hotreload capability. We were previously looking into Tilt but were concerned with its recent acquisition by Docker. We are moving DevSpace into trial given that it allows both remote developent, and native Kubernetes-based development, allowing developers to work in an 'as close to production' environment as possible."
+    "description": "<a href='https://www.devspace.sh/'><b>DevSpace</b></a> is a competitor to <a href='https://tilt.dev/'>Tilt</a> (now Docker owned) and <a href='https://skaffold.dev/'>Skaffold</a> (Google). It is created by the team behind <a href='https://devpod.sh/'>DevPod</a> (Github Workspace alternative). DevSpace allows working in a complete local or remote dev environment configured for your team and automates all the steps from a code change to a new process: watching files, building container images, and bringing your environment up-to-date. Whereas other tools focused on providing file or container-based development, DevSpace provides all virtual services and databases needed for a complete working environment with hotreload capability. We were previously looking into Tilt but were concerned with its recent acquisition by Docker. We are moving DevSpace into trial given that it allows both remote developent, and native Kubernetes-based development, allowing developers to work in an 'as close to production' environment as possible."
   }
 ]
