@@ -318,7 +318,7 @@ const Factory = function () {
 
     const domainName = DomainName(window.location.search.substring(1))
 
-    const paramId = "https://tech-radar.dev.snap.app/files/radar.json"
+    const paramId = `https://${window.location.hostname}/files/radar.json`
     if (paramId && paramId.endsWith('.csv')) {
       sheet = CSVDocument(paramId)
       sheet.init().build()
