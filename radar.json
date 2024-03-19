@@ -35,6 +35,13 @@
     "description": "Achieving true Continuous Deployment (CD) in our CI/CD processes, particularly for legacy applications with limited test coverage, necessitates the adoption of Feature Toggles. This approach resolves the challenge of safely implementing continuous updates by allowing us to selectively activate new features, ensuring operational stability and user satisfaction without the need for push-button deployments. A key aspect of this approach includes minimizing the use of dev and staging environments, and aligning staging deployments in lockstep with production. The critical distinction between staging and production lies in the activation state of the feature toggles—active in one environment and inactive in the other. This method ensures a seamless, controlled rollout of new features, maintaining system stability and enhancing our deployment efficiency across projects. Feature Toggles have become crucial at Snap to maintain the pace and reliability of our deployments across teams."
   },
   {
+    "name": "NIST 2.0",
+    "quadrant": "techniques",
+    "ring": "adopt",
+    "isNew": "TRUE",
+    "description": "The NIST Cybersecurity Framework (CSF) 2.0 provides guidance to industry, government agencies, and other organizations to manage cybersecurity risks"
+  },
+  {
     "name": "Pre Mortem Exercises",
     "quadrant": "techniques",
     "ring": "adopt",
