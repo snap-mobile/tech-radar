@@ -298,8 +298,7 @@
     "quadrant": "platforms",
     "ring": "adopt",
     "isNew": "FALSE",
-    "description": "
-Hive GraphQL is a query language and runtime for APIs that simplifies data retrieval and manipulation by providing a unified interface for accessing various data sources, optimizing efficiency and developer productivity."
+    "description": "Hive GraphQL is a query language and runtime for APIs that simplifies data retrieval and manipulation by providing a unified interface for accessing various data sources, optimizing efficiency and developer productivity."
   },
   {
     "name": "Magento",
@@ -314,5 +313,12 @@ Hive GraphQL is a query language and runtime for APIs that simplifies data retri
     "ring": "adopt",
     "isNew": "FALSE",
     "description": "Magento is an open-source e-commerce platform known for its robust features, flexibility, and scalability, empowering businesses to create and manage online stores with ease."
+  },
+  {
+    "name": "Cloudflare Workers",
+    "quadrant": "platforms",
+    "ring": "adopt",
+    "isNew": "FALSE",
+    "description": "Used for image overlay processing for Store."
   }
 ]
