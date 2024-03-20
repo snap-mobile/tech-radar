@@ -320,5 +320,26 @@
     "ring": "adopt",
     "isNew": "FALSE",
     "description": "Used for image overlay processing for Store."
+  },
+  {
+    "name": "Cloudflare Workers",
+    "quadrant": "platforms",
+    "ring": "adopt",
+    "isNew": "FALSE",
+    "description": "Used for image overlay processing for Store."
+  },
+  {
+    "name": "Cloudflare Area1",
+    "quadrant": "tools",
+    "ring": "adopt",
+    "isNew": "FALSE",
+    "description": "Cloudflare Area 1 is a cybersecurity platform offering advanced threat protection against email-based attacks, such as phishing and malware, by leveraging AI-driven detection and real-time threat intelligence."
+  },
+  {
+    "name": "Amazon ELB",
+    "quadrant": "platforms",
+    "ring": "adopt",
+    "isNew": "FALSE",
+    "description": "Amazon ELB (Elastic Load Balancing) is a managed service that automatically distributes incoming application traffic across multiple targets, such as EC2 instances or containers, to ensure high availability and scalability of web applications."
   }
 ]
