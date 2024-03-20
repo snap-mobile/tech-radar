@@ -425,5 +425,12 @@
     "ring": "hold",
     "isNew": "FALSE",
     "description": "DynamoDB is a fully managed NoSQL database service provided by Amazon Web Services (AWS), offering high performance, scalability, and low latency for applications requiring flexible and reliable data storage."
+  },
+  {
+    "name": "Amazon SQS",
+    "quadrant": "platforms",
+    "ring": "adopt",
+    "isNew": "FALSE",
+    "description": "Amazon SQS (Simple Queue Service) is a fully managed message queuing service that enables decoupling of components in distributed systems, ensuring reliable and scalable communication between various software components."
   }
 ]
