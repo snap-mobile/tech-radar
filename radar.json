@@ -418,5 +418,12 @@
     "ring": "hold",
     "isNew": "FALSE",
     "description": "MongoDB is a popular NoSQL database management system that offers high performance, scalability, and flexibility for storing and querying unstructured and semi-structured data, using a document-oriented data model."
+  },
+  {
+    "name": "DynamoDB",
+    "quadrant": "platforms",
+    "ring": "hold",
+    "isNew": "FALSE",
+    "description": "DynamoDB is a fully managed NoSQL database service provided by Amazon Web Services (AWS), offering high performance, scalability, and low latency for applications requiring flexible and reliable data storage."
   }
 ]
