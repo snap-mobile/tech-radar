@@ -383,5 +383,40 @@
     "ring": "hold",
     "isNew": "FALSE",
     "description": "Authorize.net is a payment gateway service that enables businesses to securely accept online payments via credit cards and electronic checks, facilitating seamless transactions for e-commerce and retail operations."
+  },
+  {
+    "name": "Amazon S3",
+    "quadrant": "platforms",
+    "ring": "adopy",
+    "isNew": "FALSE",
+    "description": "Amazon S3 (Simple Storage Service) is a scalable cloud storage service that allows users to store and retrieve any amount of data from anywhere on the web, offering high durability, availability, and performance."
+  },
+  {
+    "name": "OneSignal",
+    "quadrant": "platforms",
+    "ring": "adopt",
+    "isNew": "FALSE",
+    "description": "OneSignal is a multi-channel customer engagement platform that enables businesses to send personalized push notifications, emails, and in-app messages to users, helping to increase user engagement and retention."
+  },
+  {
+    "name": "Firestore",
+    "quadrant": "platforms",
+    "ring": "hold",
+    "isNew": "FALSE",
+    "description": "Firestore is a flexible and scalable NoSQL cloud database service provided by Google Cloud Platform, designed for real-time data synchronization and offline support for web, mobile, and server applications."
+  },
+  {
+    "name": "Lightsail",
+    "quadrant": "platforms",
+    "ring": "hold",
+    "isNew": "FALSE",
+    "description": "Lightsail is an easy-to-use cloud service offered by Amazon Web Services (AWS) that provides pre-configured virtual private servers (VPS) with a simple pricing model, enabling users to deploy and manage websites, applications, and databases with ease."
+  },
+  {
+    "name": "MongoDB",
+    "quadrant": "platforms",
+    "ring": "hold",
+    "isNew": "FALSE",
+    "description": "MongoDB is a popular NoSQL database management system that offers high performance, scalability, and flexibility for storing and querying unstructured and semi-structured data, using a document-oriented data model."
   }
 ]
