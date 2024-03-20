@@ -257,5 +257,62 @@
     "ring": "trial",
     "isNew": "TRUE",
     "description": "<a href='https://www.devspace.sh/'><b>DevSpace</b></a> is a competitor to <a href='https://tilt.dev/'>Tilt</a> (now Docker owned) and <a href='https://skaffold.dev/'>Skaffold</a> (Google). It is created by the team behind <a href='https://devpod.sh/'>DevPod</a> (Github Workspace alternative). DevSpace allows working in a complete local or remote dev environment configured for your team and automates all the steps from a code change to a new process: watching files, building container images, and bringing your environment up-to-date. Whereas other tools focused on providing file or container-based development, DevSpace provides all virtual services and databases needed for a complete working environment with hotreload capability. We were previously looking into Tilt but were concerned with its recent acquisition by Docker. We are moving DevSpace into trial given that it allows both remote developent, and native Kubernetes-based development, allowing developers to work in an 'as close to production' environment as possible."
+  },
+  {
+    "name": "Amazon RDS",
+    "quadrant": "platforms",
+    "ring": "adopt",
+    "isNew": "FALSE",
+    "description": "Amazon RDS (Relational Database Service) is a managed relational database service offered by Amazon Web Services, providing easy setup, scaling, and administration of various database engines in the cloud."
+  },
+  {
+    "name": "Neo4j",
+    "quadrant": "platforms",
+    "ring": "adopt",
+    "isNew": "FALSE",
+    "description": "Neo4j is a graph database management system designed for efficient storage and querying of interconnected data, utilizing graph structures to represent and navigate relationships between entities."
+  },
+  {
+    "name": "Redis",
+    "quadrant": "platforms",
+    "ring": "adopt",
+    "isNew": "FALSE",
+    "description": "Redis is an open-source, in-memory data structure store known for its high performance, versatility, and support for various data structures, commonly used as a caching, messaging, and real-time analytics solution."
+  },
+  {
+    "name": "Twilio",
+    "quadrant": "platforms",
+    "ring": "adopt",
+    "isNew": "FALSE",
+    "description": "Twilio is a cloud communications platform that enables developers to integrate messaging, voice, and video capabilities into their applications via APIs, facilitating seamless customer engagement experiences. We leverage Twilio for SMS Messages."
+  },
+  {
+    "name": "SendGrid",
+    "quadrant": "platforms",
+    "ring": "adopt",
+    "isNew": "FALSE",
+    "description": "SendGrid is a cloud-based email service provider that offers scalable email delivery solutions and analytics to help businesses effectively manage and optimize their email communication strategies."
+  },
+  {
+    "name": "Hive GraphQL",
+    "quadrant": "platforms",
+    "ring": "adopt",
+    "isNew": "FALSE",
+    "description": "
+Hive GraphQL is a query language and runtime for APIs that simplifies data retrieval and manipulation by providing a unified interface for accessing various data sources, optimizing efficiency and developer productivity."
+  },
+  {
+    "name": "Magento",
+    "quadrant": "platforms",
+    "ring": "adopt",
+    "isNew": "FALSE",
+    "description": "Magento is an open-source e-commerce platform known for its robust features, flexibility, and scalability, empowering businesses to create and manage online stores with ease."
+  },
+  {
+    "name": "Magento",
+    "quadrant": "platforms",
+    "ring": "adopt",
+    "isNew": "FALSE",
+    "description": "Magento is an open-source e-commerce platform known for its robust features, flexibility, and scalability, empowering businesses to create and manage online stores with ease."
   }
 ]
