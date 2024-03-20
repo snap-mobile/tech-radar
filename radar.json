@@ -362,5 +362,19 @@
     "ring": "adopt",
     "isNew": "FALSE",
     "description": "Twisp is a purpose-built system that provides a mission-critical, high performance, core ledger for constructing and running financial products, empowering organizations to have complete control over their crucial financial data."
+  },
+  {
+    "name": "stripe",
+    "quadrant": "platforms",
+    "ring": "adopt",
+    "isNew": "FALSE",
+    "description": "Stripe is an online payment processing platform that provides businesses with tools to accept payments, manage subscriptions, and handle financial transactions securely and efficiently."
+  },
+  {
+    "name": "Authorize.net",
+    "quadrant": "platforms",
+    "ring": "hold",
+    "isNew": "FALSE",
+    "description": "Authorize.net is a payment gateway service that enables businesses to securely accept online payments via credit cards and electronic checks, facilitating seamless transactions for e-commerce and retail operations."
   }
 ]
