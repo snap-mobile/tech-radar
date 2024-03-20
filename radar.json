@@ -348,5 +348,19 @@
     "ring": "hold",
     "isNew": "FALSE",
     "description": "Workato is an integration platform that enables businesses to automate workflows and connect disparate applications and systems without the need for extensive coding, streamlining processes and improving efficiency."
+  },
+  {
+    "name": "Unit",
+    "quadrant": "platforms",
+    "ring": "adopt",
+    "isNew": "FALSE",
+    "description": "Unit Banking as a Service (BaaS) is a financial technology solution that allows non-bank companies to offer banking services, such as payments, lending, and account management, through APIs, enabling seamless integration of financial functionalities into various applications and platforms."
+  },
+  {
+    "name": "Twisp",
+    "quadrant": "platforms",
+    "ring": "adopt",
+    "isNew": "FALSE",
+    "description": "Twisp is a purpose-built system that provides a mission-critical, high performance, core ledger for constructing and running financial products, empowering organizations to have complete control over their crucial financial data."
   }
 ]
