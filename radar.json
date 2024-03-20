@@ -121,9 +121,16 @@
   {
     "name": "Snyk",
     "quadrant": "tools",
-    "ring": "hold",
+    "ring": "adopt",
     "isNew": "FALSE",
     "description": "<a href='https://snyk.io/'><b>Snyk</b></a> provides both static application security testing (SAST) and software component analysis (SCA) tests to help you find, fix and monitor security issues throughout the software development lifecycle. Its broad range of features is designed to speed up the feedback loop, favoring a shift-left approach instead of the <a href='https://www.thoughtworks.com/en-us/radar/techniques/security-sandwich'>security sandwich anti-pattern</a>. As one of the best security platforms available today, Snyk stands out because of its ability to identify a wider range of issues, enabled mainly by a <a href='https://docs.snyk.io/scan-application-code/snyk-open-source/starting-to-fix-vulnerabilities/using-the-snyk-vulnerability-database'>dedicated research team adding to its vulnerability database</a>. But there's room for improvement: the dashboard currently doesn't provide an easy way to filter noise down to specific actionable information; depending on the language ecosystem, SCA-based integrations can output false positives compared to pipeline-based integrations because Snyk has to guess what the resolved dependencies are; automated resolution is not consistently successful; and significant integration investment is required in order to achieve proper gatekeeping or to establish an SBOM in high regulatory environments. Despite these shortcomings, Snap recommends the adoption of Snyk across the organization."
+  },
+    {
+    "name": "StackHawk",
+    "quadrant": "tools",
+    "ring": "hold",
+    "isNew": "FALSE",
+    "description": "StackHawk is a dynamic application security testing (DAST) platform that helps developers find and fix security vulnerabilities in their web applications through automated scanning and prioritized vulnerability insights."
   },
   {
     "name": "Nuclei",
