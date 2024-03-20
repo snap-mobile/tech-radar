@@ -60,14 +60,14 @@
     "quadrant": "languages & frameworks",
     "ring": "assess",
     "isNew": "TRUE",
-    "description": "<a href='https://www.rust-lang.org/'><b>Elixir</b></a> is an elegant functional programming language focusing on concurrency, fault tolerance, and developer productivity, alongside a vibrant community and ecosystem. It has a lightweight process model, enabling millions of processes to run concurrently on the same virtual machine. Elixir leverages the Erlang VM, which is a language proven in its fault tolerance and used to power communications across global satellite and telecommunication networks. Its <a href='https://www.phoenixframework.org/'><b>Phoenix</b></a> web framework is designed for high productivity and maintainability, making the best use of Elixir's concurrent features."
+    "description": "<a href='https://elixir-lang.org/'><b>Elixir</b></a> is an elegant functional programming language focusing on concurrency, fault tolerance, and developer productivity, alongside a vibrant community and ecosystem. It has a lightweight process model, enabling millions of processes to run concurrently on the same virtual machine. Elixir leverages the Erlang VM, which is a language proven in its fault tolerance and used to power communications across global satellite and telecommunication networks. Its <a href='https://www.phoenixframework.org/'><b>Phoenix</b></a> web framework is designed for high productivity and maintainability, making the best use of Elixir's concurrent features."
   },
   {
     "name": "Rust",
     "quadrant": "languages & frameworks",
     "ring": "assess",
     "isNew": "TRUE",
-    "description": "<a href='https://www.rust-lang.org/'><b>Rust</b></a> has emerged as a powerful programming language that we are looking to add to our arsenal, distinguished by its unparalleled emphasis on safety, speed, and concurrency. Rust's ownership model eliminates common bugs associated with memory management and concurrency, allowing for more reliable and efficient code. Its performance is comparable to languages like C, without sacrificing safety, making it an ideal choice for performance-critical applications. Furthermore, Rust's vibrant ecosystem and comprehensive tooling support foster rapid development and maintainability. We are moving Rust to 'Trial' as we think adopting Rust not only enhances our codebase's safety and performance but also aligns with our commitment to building robust, high-quality systems."
+    "description": "<a href='https://www.rust-lang.org/'><b>Rust</b></a> has emerged as a powerful programming language that we are looking to add to our arsenal, distinguished by its unparalleled emphasis on safety, speed, and concurrency. Rust's ownership model eliminates common bugs associated with memory management and concurrency, allowing for more reliable and efficient code. Its performance is comparable to languages like C, without sacrificing safety, making it an ideal choice for performance-critical applications. Furthermore, Rust's vibrant ecosystem and comprehensive tooling support foster rapid development and maintainability."
   },
   {
     "name": "Playwright",
@@ -287,53 +287,25 @@
     "description": "Redis is an open-source, in-memory data structure store known for its high performance, versatility, and support for various data structures, commonly used as a caching, messaging, and real-time analytics solution."
   },
   {
-    "name": "Twilio",
+    "name": "GraphQL",
     "quadrant": "platforms",
     "ring": "adopt",
     "isNew": "FALSE",
-    "description": "Twilio is a cloud communications platform that enables developers to integrate messaging, voice, and video capabilities into their applications via APIs, facilitating seamless customer engagement experiences. We leverage Twilio for SMS Messages."
-  },
-  {
-    "name": "SendGrid",
-    "quadrant": "platforms",
-    "ring": "adopt",
-    "isNew": "FALSE",
-    "description": "SendGrid is a cloud-based email service provider that offers scalable email delivery solutions and analytics to help businesses effectively manage and optimize their email communication strategies."
-  },
-  {
-    "name": "Hive GraphQL",
-    "quadrant": "platforms",
-    "ring": "adopt",
-    "isNew": "FALSE",
-    "description": "Hive GraphQL is a query language and runtime for APIs that simplifies data retrieval and manipulation by providing a unified interface for accessing various data sources, optimizing efficiency and developer productivity."
+    "description": "GraphQL is a query language and runtime for APIs that simplifies data retrieval and manipulation by providing a unified interface for accessing various data sources, optimizing efficiency and developer productivity."
   },
   {
     "name": "Magento",
     "quadrant": "platforms",
-    "ring": "adopt",
+    "ring": "hold",
     "isNew": "FALSE",
-    "description": "Magento is an open-source e-commerce platform known for its robust features, flexibility, and scalability, empowering businesses to create and manage online stores with ease."
+    "description": "<a href='https://magento.com/'>Magento</a> is an Adobe-owned open-source e-commerce platform known for its robust features, flexibility, and scalability, allowingthe creation of online stores. While we've seen success rolling out Magento in production. We've found it difficult to roll out on our tech stack due to the scaling limitations of PHP and tight coupling of Magento's data with its implementation. While there are versions of Magento that are more conducive to modern development, these have increasingly become paywalled behind Adobe's 'Magento Cloud' offering. If you're looking to implement e-commerce, we'd recommend a headless approach like <a href='https://hydrogen.shopify.dev/'><b>Hydrogen</b></a> or similar tools."
   },
   {
-    "name": "Cloudflare Workers",
-    "quadrant": "platforms",
-    "ring": "adopt",
-    "isNew": "FALSE",
-    "description": "Used for image overlay processing for Store."
-  },
-  {
-    "name": "Cloudflare Area1",
+    "name": "Cloudflare Area 1",
     "quadrant": "tools",
     "ring": "adopt",
     "isNew": "FALSE",
-    "description": "Cloudflare Area 1 is a cybersecurity platform offering advanced threat protection against email-based attacks, such as phishing and malware, by leveraging AI-driven detection and real-time threat intelligence."
-  },
-  {
-    "name": "Amazon ELB",
-    "quadrant": "platforms",
-    "ring": "adopt",
-    "isNew": "FALSE",
-    "description": "Amazon ELB (Elastic Load Balancing) is a managed service that automatically distributes incoming application traffic across multiple targets, such as EC2 instances or containers, to ensure high availability and scalability of web applications."
+    "description": "<a href='https://www.cloudflare.com/zero-trust/products/email-security/'>CloudFlare Area 1</a> is a cybersecurity platform offering advanced threat protection against email-based attacks, such as phishing and malware, by leveraging AI-driven detection and real-time threat intelligence. It also has the capability to launch emails in a virtual browser environment to provide threat isolation."
   },
   {
     "name": "Workato",
@@ -343,46 +315,11 @@
     "description": "Workato is an integration platform that enables businesses to automate workflows and connect disparate applications and systems without the need for extensive coding, streamlining processes and improving efficiency."
   },
   {
-    "name": "Unit",
-    "quadrant": "platforms",
-    "ring": "adopt",
-    "isNew": "FALSE",
-    "description": "Unit Banking as a Service (BaaS) is a financial technology solution that allows non-bank companies to offer banking services, such as payments, lending, and account management, through APIs, enabling seamless integration of financial functionalities into various applications and platforms."
-  },
-  {
-    "name": "Twisp",
-    "quadrant": "platforms",
-    "ring": "adopt",
-    "isNew": "FALSE",
-    "description": "Twisp is a purpose-built system that provides a mission-critical, high performance, core ledger for constructing and running financial products, empowering organizations to have complete control over their crucial financial data."
-  },
-  {
-    "name": "stripe",
-    "quadrant": "platforms",
-    "ring": "adopt",
-    "isNew": "FALSE",
-    "description": "Stripe is an online payment processing platform that provides businesses with tools to accept payments, manage subscriptions, and handle financial transactions securely and efficiently."
-  },
-  {
-    "name": "Authorize.net",
-    "quadrant": "platforms",
-    "ring": "hold",
-    "isNew": "FALSE",
-    "description": "Authorize.net is a payment gateway service that enables businesses to securely accept online payments via credit cards and electronic checks, facilitating seamless transactions for e-commerce and retail operations."
-  },
-  {
     "name": "Amazon S3",
     "quadrant": "platforms",
-    "ring": "adopy",
-    "isNew": "FALSE",
-    "description": "Amazon S3 (Simple Storage Service) is a scalable cloud storage service that allows users to store and retrieve any amount of data from anywhere on the web, offering high durability, availability, and performance."
-  },
-  {
-    "name": "OneSignal",
-    "quadrant": "platforms",
     "ring": "adopt",
     "isNew": "FALSE",
-    "description": "OneSignal is a multi-channel customer engagement platform that enables businesses to send personalized push notifications, emails, and in-app messages to users, helping to increase user engagement and retention."
+    "description": "<a href='https://aws.amazon.com/s3/><b>Amazon S3</b></a> is a scalable cloud storage service that allows users to store and retrieve any amount of data from anywhere on the web, offering high durability, availability, and performance."
   },
   {
     "name": "Firestore",
@@ -411,12 +348,5 @@
     "ring": "hold",
     "isNew": "FALSE",
     "description": "DynamoDB is a fully managed NoSQL database service provided by Amazon Web Services (AWS), offering high performance, scalability, and low latency for applications requiring flexible and reliable data storage."
-  },
-  {
-    "name": "Amazon SQS",
-    "quadrant": "platforms",
-    "ring": "adopt",
-    "isNew": "FALSE",
-    "description": "Amazon SQS (Simple Queue Service) is a fully managed message queuing service that enables decoupling of components in distributed systems, ensuring reliable and scalable communication between various software components."
   }
 ]
