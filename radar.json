@@ -341,5 +341,12 @@
     "ring": "adopt",
     "isNew": "FALSE",
     "description": "Amazon ELB (Elastic Load Balancing) is a managed service that automatically distributes incoming application traffic across multiple targets, such as EC2 instances or containers, to ensure high availability and scalability of web applications."
+  },
+  {
+    "name": "Workato",
+    "quadrant": "platforms",
+    "ring": "hold",
+    "isNew": "FALSE",
+    "description": "Workato is an integration platform that enables businesses to automate workflows and connect disparate applications and systems without the need for extensive coding, streamlining processes and improving efficiency."
   }
 ]
