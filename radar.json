@@ -315,20 +315,6 @@
     "description": "Magento is an open-source e-commerce platform known for its robust features, flexibility, and scalability, empowering businesses to create and manage online stores with ease."
   },
   {
-    "name": "Magento",
-    "quadrant": "platforms",
-    "ring": "adopt",
-    "isNew": "FALSE",
-    "description": "Magento is an open-source e-commerce platform known for its robust features, flexibility, and scalability, empowering businesses to create and manage online stores with ease."
-  },
-  {
-    "name": "Cloudflare Workers",
-    "quadrant": "platforms",
-    "ring": "adopt",
-    "isNew": "FALSE",
-    "description": "Used for image overlay processing for Store."
-  },
-  {
     "name": "Cloudflare Workers",
     "quadrant": "platforms",
     "ring": "adopt",
