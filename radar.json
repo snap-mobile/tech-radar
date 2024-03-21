@@ -56,16 +56,9 @@
     "description": "Recognizing the challenges we've faced in identifying performance bottlenecks in our past projects, the necessity of Software Load Testing has become increasingly clear. This allows us to simulate high-usage conditions to ensure our applications can handle expected traffic volumes and interactions without degradation in performance. By integrating Software Load Testing into our development lifecycle, we aim to preemptively identify and address potential issues, enhancing the robustness and scalability of our systems."
   },
   {
-    "name": "Elixir",
-    "quadrant": "languages & frameworks",
-    "ring": "assess",
-    "isNew": "TRUE",
-    "description": "<a href='https://elixir-lang.org/'><b>Elixir</b></a> is an elegant functional programming language focusing on concurrency, fault tolerance, and developer productivity, alongside a vibrant community and ecosystem. It has a lightweight process model, enabling millions of processes to run concurrently on the same virtual machine. Elixir leverages the Erlang VM, which is a language proven in its fault tolerance and used to power communications across global satellite and telecommunication networks. Its <a href='https://www.phoenixframework.org/'><b>Phoenix</b></a> web framework is designed for high productivity and maintainability, making the best use of Elixir's concurrent features."
-  },
-  {
     "name": "Rust",
     "quadrant": "languages & frameworks",
-    "ring": "assess",
+    "ring": "trial",
     "isNew": "TRUE",
     "description": "<a href='https://www.rust-lang.org/'><b>Rust</b></a> has emerged as a powerful programming language that we are looking to add to our arsenal, distinguished by its unparalleled emphasis on safety, speed, and concurrency. Rust's ownership model eliminates common bugs associated with memory management and concurrency, allowing for more reliable and efficient code. Its performance is comparable to languages like C, without sacrificing safety, making it an ideal choice for performance-critical applications. Furthermore, Rust's vibrant ecosystem and comprehensive tooling support foster rapid development and maintainability."
   },
