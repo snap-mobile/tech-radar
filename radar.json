@@ -315,13 +315,6 @@
     "description": "Workato is an integration platform that enables businesses to automate workflows and connect disparate applications and systems without the need for extensive coding, streamlining processes and improving efficiency."
   },
   {
-    "name": "Amazon S3",
-    "quadrant": "platforms",
-    "ring": "adopt",
-    "isNew": "FALSE",
-    "description": "<a href='https://aws.amazon.com/s3/><b>Amazon S3</b></a> is a scalable cloud storage service that allows users to store and retrieve any amount of data from anywhere on the web, offering high durability, availability, and performance."
-  },
-  {
     "name": "Firestore",
     "quadrant": "platforms",
     "ring": "hold",
