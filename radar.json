@@ -334,5 +334,12 @@
     "ring": "hold",
     "isNew": "FALSE",
     "description": "DynamoDB is a fully managed NoSQL database service provided by Amazon Web Services (AWS), offering high performance, scalability, and low latency for applications requiring flexible and reliable data storage."
+  },
+  {
+    "name": "Dead-code Eliminators",
+    "quadrant": "languages & frameworks",
+    "ring": "assess",
+    "isNew": "TRUE",
+    "description": "We've had some success using tools that measure code execution in production and help us identify unused or infrequently used code. While tools like <a href='https://github.com/danmayer/coverband'>Coverband</a> work well in Ruby. Assessment is still required for our primary language Node. <a href='https://github.com/bcoe/c8'>C8</a> may be an avenue to explore, as well as New Relic's built in reporting."
   }
 ]
